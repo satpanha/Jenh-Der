@@ -1,0 +1,1 @@
+enum AnswerStatus {neutral, correct, wrong}
