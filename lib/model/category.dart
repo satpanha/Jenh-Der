@@ -1,1 +1,6 @@
-enum Category { temple, lake, nature }
+enum Category {
+  all, 
+  temple, 
+  lake, 
+  nature 
+}

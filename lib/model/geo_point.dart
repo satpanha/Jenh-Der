@@ -1,4 +1,3 @@
-import 'dart:math';
 
 class GeoPoint {
   final double latitude;
