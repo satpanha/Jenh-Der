@@ -1,6 +1,10 @@
 enum Category {
-  all, 
-  temple, 
-  lake, 
-  nature 
+  all('All'),
+  temple('Temple'),
+  nature('Nature'),
+  lake('Lakes');
+
+  final String label;
+
+  const Category(this.label);
 }

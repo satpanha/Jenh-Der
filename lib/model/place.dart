@@ -21,14 +21,14 @@ class Place {
     required this.location,
   });
 
-  bool matchesSearch(String searchKeyword) {
-    final keyword = searchKeyword.trim().toLowerCase();
+  bool matchesSearch(String keyword) {
+    final text = keyword.trim().toLowerCase();
 
-    if (keyword.isEmpty) {
+    if (text.isEmpty) {
       return true;
     }
 
-    return name.toLowerCase().contains(keyword) ||
-        province.name.toLowerCase().contains(keyword);
+    return name.toLowerCase().contains(text) ||
+        province.name.toLowerCase().contains(text);
   }
 }

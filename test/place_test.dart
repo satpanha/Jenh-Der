@@ -1,8 +1,8 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:jenh_der/model/category.dart';
-import 'package:jenh_der/model/geo_point.dart';
-import 'package:jenh_der/model/place.dart';
-import 'package:jenh_der/model/province.dart';
+import '../../docs/lib/model/category.dart';
+import '../../docs/lib/model/geo_point.dart';
+import '../../docs/lib/model/place.dart';
+import '../../docs/lib/model/province.dart';
 
 void main() {
   final province = Province(id: 'PV001', name: 'Preah Vihear');

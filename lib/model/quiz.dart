@@ -1,4 +1,4 @@
-import 'package:jenh_der/model/quiz_qestion.dart';
+import 'package:jenh_der/model/quiz_question.dart';
 
 class Quiz {
   final String id;
@@ -6,7 +6,7 @@ class Quiz {
   final String title;
   final int pointReward;
   final int passScore;
-  final List<QuizQestion> question;
+  final List<QuizQuestion> questions;
 
   Quiz({
     required this.id,
@@ -14,16 +14,14 @@ class Quiz {
     required this.title,
     required this.pointReward,
     required this.passScore,
-    required this.question,
+    required this.questions,
   });
 
   int scoreOf(List<int?> answers) {
-    var score = 0;
+    int score = 0;
 
-    for (var i = 0; i < question.length; i++) {
-      final picked = i < answers.length ? answers[i] : null;
-
-      if (question[i].isCorrect(picked)) {
+    for (int i = 0; i < questions.length; i++) {
+      if (questions[i].isCorrect(answers[i])) {
         score++;
       }
     }

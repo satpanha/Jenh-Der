@@ -1,1 +1,1 @@
-enum UserRole {explorer, admin}
+enum UserRole { explorer, admin }
